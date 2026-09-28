@@ -1,0 +1,6384 @@
+[
+  {
+    "access": 1,
+    "address": "Rasovo bb, Bijelo Polje, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2",
+      "CHAdeMO",
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 600711,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 43.042838798426494,
+    "longitude": 19.770619980990887,
+    "name": "EKO Bijelo Polje",
+    "score": 10.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1567262,
+        "outlets": [
+          {
+            "connector": 3,
+            "id": 3589619,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 20,
+            "id": 3589620,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3589621,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/600711"
+  },
+  {
+    "access": 1,
+    "address": "542H+FJ8, Žabljak, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2",
+      "CHAdeMO",
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 927831,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 43.151845654593394,
+    "longitude": 19.129018170179265,
+    "name": "Eko Žabljak",
+    "score": 10.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2309140,
+        "outlets": [
+          {
+            "connector": 3,
+            "id": 4636121,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 20,
+            "id": 4636122,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 5097390,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/927831"
+  },
+  {
+    "access": 1,
+    "address": "Cetinjski put, 81101, Monténégro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Caravan Mains Socket",
+      "Wall (Euro)"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 100827,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.414932,
+    "longitude": 19.20379,
+    "name": "Renault Podgorica ",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 168264,
+        "outlets": [
+          {
+            "connector": 10,
+            "id": 388634,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 204301,
+        "outlets": [
+          {
+            "connector": 15,
+            "id": 440322,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/100827"
+  },
+  {
+    "access": 1,
+    "address": "58 E65, Igalo, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2",
+      "CHAdeMO",
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 949265,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.45560133981299,
+    "longitude": 18.503076930677096,
+    "name": "EKO HN Igalo",
+    "score": 7.8,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2330396,
+        "outlets": [
+          {
+            "connector": 3,
+            "id": 4662535,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 20,
+            "id": 4664308,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 4664311,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/949265"
+  },
+  {
+    "access": 1,
+    "address": "X3HC+4W Pošćenje, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 622715,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.977924550756505,
+    "longitude": 19.07255539880831,
+    "name": "Eco Village Nevidio",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1635633,
+        "network_id": 40,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3627329,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/622715"
+  },
+  {
+    "access": 1,
+    "address": "Highway Princess Ksenija",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 1351739,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.59480496651259,
+    "longitude": 19.394833428493694,
+    "name": "Rest stop Pelev Brijeg",
+    "score": 10.0,
+    "station_count": 4,
+    "stations": [
+      {
+        "id": 2747864,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 5100285,
+            "is_dc": true,
+            "kilowatts": 200.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 3465262,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 5852806,
+            "is_dc": true,
+            "kilowatts": 200.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 3465263,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 5852807,
+            "is_dc": true,
+            "kilowatts": 200.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 3465264,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 5852808,
+            "is_dc": true,
+            "kilowatts": 200.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1351739"
+  },
+  {
+    "access": 1,
+    "address": "H424+4FG, Danilovgrad, Crna Gora",
+    "available_station_count": null,
+    "coming_soon": true,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/GR.png",
+    "icon_type": "GR",
+    "id": 1156646,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.55005864365465,
+    "longitude": 19.106258265674114,
+    "name": "Danilovgrad EV Charging Station (Coming Soon)",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2534589,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4873051,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1156646"
+  },
+  {
+    "access": 1,
+    "address": "bb Vranjina bb Vranjina - Skadarsko jezero 81000, Montenegro",
+    "available_station_count": 0,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/AR.png",
+    "icon_type": "AR",
+    "id": 286566,
+    "in_use_station_count": 0,
+    "is_fast_charger": false,
+    "latitude": 42.272198,
+    "longitude": 19.123666,
+    "name": "Vranjina",
+    "score": 1.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 929676,
+        "network_id": 1155,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2491347,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          },
+          {
+            "connector": 7,
+            "id": 2491348,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/286566"
+  },
+  {
+    "access": 1,
+    "address": "RVVF+5H7, Туфе Софтића, Berane, Crna Gora",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 516331,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.8428875,
+    "longitude": 19.8739844,
+    "name": "Berane",
+    "score": 5.7,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1331069,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3109029,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3109030,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/516331"
+  },
+  {
+    "access": 1,
+    "address": "PQMV+G48, M9, Andrijevica, Crna Gora",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 516332,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.7338625,
+    "longitude": 19.7930469,
+    "name": "Andrijevica Municipality free",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1331071,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3109033,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3109034,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/516332"
+  },
+  {
+    "access": 1,
+    "address": "84326 Gusinje, Vusanje, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Wall (Euro)"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 557350,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.5310760631803,
+    "longitude": 19.83372267796922,
+    "name": "Eko Katun Prokletije",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1444099,
+        "outlets": [
+          {
+            "connector": 10,
+            "id": 3309385,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/557350"
+  },
+  {
+    "access": 1,
+    "address": "10 Baja Pivljanina, Cetinje, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 656036,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.38752447207252,
+    "longitude": 18.927433043718338,
+    "name": "Cetinje",
+    "score": 2.4,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1756677,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 3878491,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/656036"
+  },
+  {
+    "access": 1,
+    "address": "Jezerine - Vranjak, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 954612,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.84126472516041,
+    "longitude": 19.639450572431087,
+    "name": "Kolasin Ski Center 1600",
+    "score": 9.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2337209,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4669748,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/954612"
+  },
+  {
+    "access": 1,
+    "address": "968J+QVJ Mojanovići",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 948745,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.3669625,
+    "longitude": 19.2321406,
+    "name": "Hotel Aria",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2329927,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 4662140,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/948745"
+  },
+  {
+    "access": 1,
+    "address": "M2, Monténégro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Wall (Euro)"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 100826,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.252074,
+    "longitude": 18.89903,
+    "name": "Camping - Sveti Stefan",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 168262,
+        "outlets": [
+          {
+            "connector": 10,
+            "id": 388631,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 168263,
+        "outlets": [
+          {
+            "connector": 10,
+            "id": 388632,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/100826"
+  },
+  {
+    "access": 1,
+    "address": "G87G+8C Mrke, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 2190511,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.5133421477795,
+    "longitude": 19.32565424591303,
+    "name": "EKO - Gornje Mrke East",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 3656782,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 6092557,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 20,
+            "id": 6092558,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/2190511"
+  },
+  {
+    "access": 1,
+    "address": "63WR+6X5, Virpazar, Monténégro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 643715,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.24640557165351,
+    "longitude": 19.092409014701843,
+    "name": "Hotel De'Andros",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1721554,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3797190,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1721555,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3797191,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/643715"
+  },
+  {
+    "access": 1,
+    "address": "Obala Bijela bb, Bijela 85343, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 153984,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.452913,
+    "longitude": 18.658371,
+    "name": "Hotel Bela Roza",
+    "score": 5.2,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 295875,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 567506,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/153984"
+  },
+  {
+    "access": 1,
+    "address": "190 E65, Kotor, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 2008507,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.419406437072865,
+    "longitude": 18.76954653782975,
+    "name": "EKO gasstation",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 3433958,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 5819329,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/2008507"
+  },
+  {
+    "access": 1,
+    "address": "Njeguši",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 2233376,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.42704105793479,
+    "longitude": 18.800790241001895,
+    "name": "Etno Selo Sveti Georgije",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 3704144,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 6141473,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/2233376"
+  },
+  {
+    "access": 1,
+    "address": "FF8M+2VH, Sutorina, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 560099,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.46504230640013,
+    "longitude": 18.484691409737533,
+    "name": "Polino Arena, Igalo, HN",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1451480,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3321305,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/560099"
+  },
+  {
+    "access": 1,
+    "address": "bb Štampar Makarije, Cetinje, 81250, MNE",
+    "available_station_count": 0,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/AR.png",
+    "icon_type": "AR",
+    "id": 386324,
+    "in_use_station_count": 0,
+    "is_fast_charger": false,
+    "latitude": 42.414722,
+    "longitude": 18.923889,
+    "name": "Hrvatski Telekom d.d.",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 929674,
+        "network_id": 1155,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2491343,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          },
+          {
+            "connector": 7,
+            "id": 2491344,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/386324"
+  },
+  {
+    "access": 1,
+    "address": "Royal Blue Residence Road",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 1047595,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.41383422407566,
+    "longitude": 18.74304360558164,
+    "name": "Royal Blue",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2430652,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4764470,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1047595"
+  },
+  {
+    "access": 1,
+    "address": "Ulica Marsal, Utjeha-Bušat 85356, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 265164,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.004442,
+    "longitude": 19.15157,
+    "name": "Apartments / Ferienwohnungen Utjeha",
+    "score": 10.0,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 582159,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 1605478,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 582160,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 1605479,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/265164"
+  },
+  {
+    "access": 1,
+    "address": "XH72+97C, Polja, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 2124443,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.963719682474334,
+    "longitude": 19.550188167360872,
+    "name": "Hotel and Restaurant Serdar",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 3550672,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 5942325,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/2124443"
+  },
+  {
+    "access": 1,
+    "address": "9PWX+59, Kavač, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 1659212,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.39487758247959,
+    "longitude": 18.747040405869484,
+    "name": "Zičara Kotor-Lovćen (Kotor)",
+    "score": 10.0,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 3079733,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 5449172,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 3079734,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 5449173,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1659212"
+  },
+  {
+    "access": 1,
+    "address": "Jadranska magistrala",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 784433,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.36921898828401,
+    "longitude": 18.753785139053964,
+    "name": "Radanovici Garage",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2176008,
+        "network_id": 1398,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 4498206,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/784433"
+  },
+  {
+    "access": 1,
+    "address": "Anta Dakovica 26",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 1241504,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.425657603635145,
+    "longitude": 19.299193102649536,
+    "name": "Tesla 11kwh",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2626794,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4971770,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1241504"
+  },
+  {
+    "access": 1,
+    "address": "2PMW+FQ9, Bijelo Polje, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 539135,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 43.03373206760116,
+    "longitude": 19.74696009931313,
+    "name": "Bijelo Polje Municipality",
+    "score": 3.2,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1394128,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3211183,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/539135"
+  },
+  {
+    "access": 1,
+    "address": "Nikki Beach Hotelr, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 511169,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.403278826381786,
+    "longitude": 18.680886480208713,
+    "name": "Nikki Beach hotel",
+    "score": 3.1,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1317416,
+        "network_id": 1574,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3087077,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1317417,
+        "network_id": 1574,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3087078,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/511169"
+  },
+  {
+    "access": 1,
+    "address": "F77V+892, Plužinska, Podgorica, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2",
+      "CHAdeMO",
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 550863,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.46318955482544,
+    "longitude": 19.29416130354319,
+    "name": "EKO 2 Podgorica",
+    "score": 10.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1425699,
+        "outlets": [
+          {
+            "connector": 3,
+            "id": 3281026,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 20,
+            "id": 3281027,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3281028,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/550863"
+  },
+  {
+    "access": 1,
+    "address": "FG3J+C9J, Herceg Novi, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 383465,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.453391,
+    "longitude": 18.530971,
+    "name": "Parking OPŠTINA, HN",
+    "score": 7.4,
+    "station_count": 4,
+    "stations": [
+      {
+        "id": 921741,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2478427,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 921742,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2478428,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 921743,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2478429,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 921744,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2478430,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/383465"
+  },
+  {
+    "access": 1,
+    "address": "Skojevska bb, Parking Igalo, Herceg Novi, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 357027,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.45951293030579,
+    "longitude": 18.51224385201931,
+    "name": "ZES Parking Igalo - Herceg Novi Municipality",
+    "score": 6.2,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 851387,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2375596,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 851388,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2375597,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/357027"
+  },
+  {
+    "access": 1,
+    "address": "42.956638, 19.576166",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 366060,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.9565801879851,
+    "longitude": 19.576186307884445,
+    "name": "Mojkovac Municipality",
+    "score": 6.3,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 875594,
+        "network_id": 1053,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2409478,
+            "is_dc": false,
+            "kilowatts": 11.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 875595,
+        "network_id": 1053,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2409479,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/366060"
+  },
+  {
+    "access": 1,
+    "address": "hehe",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2",
+      "Wall (Euro)"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 2212712,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.45330582680619,
+    "longitude": 18.748559542665088,
+    "name": "NTC SHOP",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 3680740,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 6117131,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 10,
+            "id": 6117132,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/2212712"
+  },
+  {
+    "access": 1,
+    "address": "Rest Art Mojkovac",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 809345,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.93859069885437,
+    "longitude": 19.57588791433156,
+    "name": "Mojkovac Tesla Destination Charger",
+    "score": 3.6,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2198096,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4520333,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/809345"
+  },
+  {
+    "access": 1,
+    "address": "967G+MR7, E80, Podgorica, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 253438,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.364156,
+    "longitude": 19.226966,
+    "name": "Linsa Cafe & Reserve Coffee",
+    "score": 1.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 555881,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 1532879,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3280954,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/253438"
+  },
+  {
+    "access": 1,
+    "address": "Jabučka BB, Cetinje",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 1969581,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.3982290628129,
+    "longitude": 18.91507183221675,
+    "name": "Meliora Homes",
+    "score": 9.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 3395237,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 5779243,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1969581"
+  },
+  {
+    "access": 1,
+    "address": "96HJ+X7X, Podgorica, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 413666,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.379819063096335,
+    "longitude": 19.230988696217537,
+    "name": "Škoda Auto, Podgorica",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 999039,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2603240,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1022685,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2644084,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/413666"
+  },
+  {
+    "access": 1,
+    "address": "29 Joke Baletic, Niksic, Crna Gora",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 763159,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.771471529374445,
+    "longitude": 18.9660719409585,
+    "name": "Monte Parts",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2155068,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4477827,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/763159"
+  },
+  {
+    "access": 1,
+    "address": "57 4. Proleterske, Budva, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Wall (Euro)"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 123953,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.292905,
+    "longitude": 18.850598,
+    "name": "Mijovic Apartments",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 220482,
+        "outlets": [
+          {
+            "connector": 10,
+            "id": 466451,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/123953"
+  },
+  {
+    "access": 1,
+    "address": "6 Raka Mugoše, Podgorica, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 247830,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.421256011314924,
+    "longitude": 19.214845821261406,
+    "name": "Namos Podgorica",
+    "score": 1.2,
+    "station_count": 3,
+    "stations": [
+      {
+        "id": 541283,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4270600,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 2049192,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4270613,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 2049193,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4270614,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/247830"
+  },
+  {
+    "access": 1,
+    "address": "montenegro, becici",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 318438,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.282103,
+    "longitude": 18.878922,
+    "name": "Falkensteiner Hotel Montenegro",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 743341,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2224508,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": "UNKNOWN"
+          }
+        ]
+      },
+      {
+        "id": 743342,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2224509,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": "UNKNOWN"
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/318438"
+  },
+  {
+    "access": 1,
+    "address": "FQ68+349 Dobrota",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 948743,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.4601625,
+    "longitude": 18.7653594,
+    "name": "Adiya Signature Hotel",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2329925,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4662138,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/948743"
+  },
+  {
+    "access": 1,
+    "address": "Przno, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 318449,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.268451,
+    "longitude": 18.893564,
+    "name": "Maestral Resort & Casino",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 743359,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2224530,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": "UNKNOWN"
+          }
+        ]
+      },
+      {
+        "id": 743360,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2224531,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": "UNKNOWN"
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/318449"
+  },
+  {
+    "access": 1,
+    "address": "Benzinska pumpa, E762, Podgorica, Monténégro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2",
+      "CHAdeMO",
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 644733,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.43036344388533,
+    "longitude": 19.23160895705223,
+    "name": "EKO Dahna",
+    "score": 9.6,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1724032,
+        "outlets": [
+          {
+            "connector": 3,
+            "id": 3860687,
+            "is_dc": true,
+            "kilowatts": 120.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 20,
+            "id": 3860688,
+            "is_dc": true,
+            "kilowatts": 120.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3860689,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 3469022,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 5856447,
+            "is_dc": true,
+            "kilowatts": 120.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 20,
+            "id": 5856448,
+            "is_dc": true,
+            "kilowatts": 120.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/644733"
+  },
+  {
+    "access": 1,
+    "address": "Nikšićki put BB",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 1969481,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.43856725581791,
+    "longitude": 19.223983804580275,
+    "name": "Autoperionica Royal",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 3395165,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 5779200,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1969481"
+  },
+  {
+    "access": 1,
+    "address": "70 Vlada Ćetkovića, Podgorica 81000, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Three Phase"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 216205,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.453863,
+    "longitude": 19.236048,
+    "name": "Perla Residence Hotel + SPA",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 466020,
+        "outlets": [
+          {
+            "connector": 14,
+            "id": 1025733,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/216205"
+  },
+  {
+    "access": 1,
+    "address": "Kumbor bb, 85340",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 541778,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.437206462838745,
+    "longitude": 18.589586288597268,
+    "name": "Carine Hotel Kumbor",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1401467,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3227421,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/541778"
+  },
+  {
+    "access": 1,
+    "address": "55 E65, Podgorica, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 469668,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.427099,
+    "longitude": 19.269654,
+    "name": "EKO 1 Podgorica",
+    "score": 6.7,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1406320,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 3238888,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 20,
+            "id": 6145160,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/469668"
+  },
+  {
+    "access": 1,
+    "address": "5442+34W, Pitomine, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Three Phase",
+      "Wall (Euro)"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 645067,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 43.15503723423934,
+    "longitude": 19.100463017821312,
+    "name": "Autocamp Mlinski Potok",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1724886,
+        "outlets": [
+          {
+            "connector": 14,
+            "id": 3806267,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1724887,
+        "outlets": [
+          {
+            "connector": 10,
+            "id": 3806268,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/645067"
+  },
+  {
+    "access": 1,
+    "address": "C79F+8HR Podgorica",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 948746,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.4183625,
+    "longitude": 19.2738906,
+    "name": "EuroPetrol",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 2329928,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4662141,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 2329929,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4662142,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/948746"
+  },
+  {
+    "access": 1,
+    "address": "Dobrota, Jadranska Magistrala",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 2233341,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.46979393351695,
+    "longitude": 18.764633891386005,
+    "name": "ESSENZA HOTELS & SPA BIANCO BEACH BAR",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 3704074,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 6141402,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 3704075,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 6141403,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/2233341"
+  },
+  {
+    "access": 1,
+    "address": "548H+M6G, KOVAČKA DOLINA, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Wall (Euro)"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 541336,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 43.16694300073403,
+    "longitude": 19.127408154308796,
+    "name": "Greentop",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1400345,
+        "outlets": [
+          {
+            "connector": 10,
+            "id": 3224797,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/541336"
+  },
+  {
+    "access": 1,
+    "address": "bb Narodnih heroja Žabljak 84220, Žabljak, Montenegro",
+    "available_station_count": 0,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/AR.png",
+    "icon_type": "AR",
+    "id": 386331,
+    "in_use_station_count": 0,
+    "is_fast_charger": false,
+    "latitude": 43.159171483822334,
+    "longitude": 19.132318241733564,
+    "name": "Sportski Centar Žabljak",
+    "score": 10.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 929683,
+        "network_id": 1155,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2491363,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          },
+          {
+            "connector": 7,
+            "id": 2491364,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/386331"
+  },
+  {
+    "access": 1,
+    "address": "CQX8+55G, E80, Dobrota, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 623864,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.44793185280238,
+    "longitude": 18.765692563617765,
+    "name": "Huma electrip EV charger",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1639306,
+        "network_id": 1470,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3635552,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1639308,
+        "network_id": 1470,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3635551,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/623864"
+  },
+  {
+    "access": 1,
+    "address": "5R3Q+7QP, Plužine, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 561042,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 43.15348091489949,
+    "longitude": 18.83887622505426,
+    "name": "Restoran Jezero",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1453935,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3324994,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 5805742,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/561042"
+  },
+  {
+    "access": 1,
+    "address": "Bijela BB, 85343",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 541779,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.457165126500044,
+    "longitude": 18.66513537238076,
+    "name": "Carine Hotel Park Bijela 4*",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1401468,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3227422,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/541779"
+  },
+  {
+    "access": 1,
+    "address": "Jurija Gagarina 11A",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Three Phase",
+      "Type 2",
+      "Wall (Euro)"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 525664,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.43911901293616,
+    "longitude": 18.696561904269732,
+    "name": "D&D Apartments",
+    "station_count": 3,
+    "stations": [
+      {
+        "id": 1355637,
+        "outlets": [
+          {
+            "connector": 14,
+            "id": 3148474,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1355638,
+        "outlets": [
+          {
+            "connector": 10,
+            "id": 3148475,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1356824,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3150445,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/525664"
+  },
+  {
+    "access": 1,
+    "address": "Jadranska Magistrala",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 1969446,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.516328003148054,
+    "longitude": 18.692261619192422,
+    "name": "Movenpick Teuta",
+    "score": 5.1,
+    "station_count": 4,
+    "stations": [
+      {
+        "id": 3395127,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 5779162,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 3395128,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 5779163,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 3395129,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 5779164,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 3395130,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 5779165,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1969446"
+  },
+  {
+    "access": 1,
+    "address": "Sutomore, ul. Cara Lazara bb",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 252843,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.141464,
+    "longitude": 19.043216,
+    "name": "Villa Jadranka Sutomore",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 554495,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 1527787,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/252843"
+  },
+  {
+    "access": 1,
+    "address": "Tripka Džakovića III/7 Žabljak, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 372064,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 43.152231,
+    "longitude": 19.122161,
+    "name": "Casa Di Pino Eco Lodge Apartments",
+    "score": 9.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 894180,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2434020,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/372064"
+  },
+  {
+    "access": 1,
+    "address": "42WR+V3F, Сутоморе, Црна Гора",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 1913737,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.14722010642614,
+    "longitude": 19.03995741158724,
+    "name": "Jadranska magistrala, 85355 Sutomore, Montenegro",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 3340902,
+        "network_id": 1574,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 5723991,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 3340903,
+        "network_id": 1574,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 5723992,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1913737"
+  },
+  {
+    "access": 1,
+    "address": "JADRANSKI PUT, ZAVALA PENINSULA, 85310 BUDVA",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2",
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 609134,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.28211854935995,
+    "longitude": 18.85937520230317,
+    "name": "DUKLEY GARDENS",
+    "score": 9.0,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1740019,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 3840499,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3840500,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1740020,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 3840501,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3840502,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/609134"
+  },
+  {
+    "access": 1,
+    "address": "CQQ7+VWJ, Dobrota, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 413658,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.439614,
+    "longitude": 18.764963,
+    "name": "C Group Apart Hotel EV Charging Station",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 999026,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2603224,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/413658"
+  },
+  {
+    "access": 1,
+    "address": "bb Marina Bar, Obala 13.jula Bar 85000, Bar, Montenegro",
+    "available_station_count": 0,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/AR.png",
+    "icon_type": "AR",
+    "id": 386327,
+    "in_use_station_count": 0,
+    "is_fast_charger": false,
+    "latitude": 42.096943,
+    "longitude": 19.088335,
+    "name": "Turistička Organizacija Bar",
+    "score": 4.6,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 929677,
+        "network_id": 1155,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2491349,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          },
+          {
+            "connector": 7,
+            "id": 2491350,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/386327"
+  },
+  {
+    "access": 1,
+    "address": "42.426476, 18.769234",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/GR.png",
+    "icon_type": "GR",
+    "id": 366061,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.42636846319792,
+    "longitude": 18.769447915256023,
+    "name": "Kotor Municipality",
+    "score": 1.0,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1394632,
+        "network_id": 1053,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3212196,
+            "is_dc": false,
+            "kilowatts": 11.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1394633,
+        "network_id": 1053,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3212197,
+            "is_dc": false,
+            "kilowatts": 11.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/366061"
+  },
+  {
+    "access": 1,
+    "address": "Vlada Ćetkovića br. 2",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 986112,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.44908115525448,
+    "longitude": 19.23267392041169,
+    "name": "Telemont Charging Station",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2372898,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4706699,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/986112"
+  },
+  {
+    "access": 1,
+    "address": "Montenegro, Bar, Dubrava, ul.80, bb",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 232643,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.030117,
+    "longitude": 19.142568,
+    "name": "Dubrava, private house",
+    "score": 9.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 507236,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 1266617,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/232643"
+  },
+  {
+    "access": 1,
+    "address": "9MP5+59, Radovići, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 948741,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.38543749999999,
+    "longitude": 18.6584375,
+    "name": "Parking Luštica",
+    "score": 9.0,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 2329922,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4662135,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 2329923,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4662136,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/948741"
+  },
+  {
+    "access": 1,
+    "address": "11 Mažina, Tivat, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2",
+      "CHAdeMO",
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 600709,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.43305728041962,
+    "longitude": 18.69885628505272,
+    "name": "EKO Tivat",
+    "score": 7.9,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1567258,
+        "outlets": [
+          {
+            "connector": 3,
+            "id": 3505417,
+            "is_dc": true,
+            "kilowatts": 50.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 20,
+            "id": 3505418,
+            "is_dc": true,
+            "kilowatts": 50.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3505419,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/600709"
+  },
+  {
+    "access": 1,
+    "address": "Ulica Radoja Dakića, Nikšić, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 357028,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.776366,
+    "longitude": 18.948473,
+    "name": "Niksic Municipality",
+    "score": 1.5,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 851389,
+        "network_id": 1053,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3632811,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3632812,
+            "is_dc": false,
+            "kilowatts": 11.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/357028"
+  },
+  {
+    "access": 1,
+    "address": "Milivoja Bulatovića Kolašin",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 2233443,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.822197613444004,
+    "longitude": 19.52744049041673,
+    "name": "Wulfenia EV Charger",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 3704212,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 6141541,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 3704213,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 6141542,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/2233443"
+  },
+  {
+    "access": 1,
+    "address": "1 Veljka Vlahovića, Budva, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 371635,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.288158,
+    "longitude": 18.849266,
+    "name": "Hotel Slavija",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 892866,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2432048,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/371635"
+  },
+  {
+    "access": 1,
+    "address": "Pet Učitelja bb, Pljevlja, 84210, ME",
+    "available_station_count": 0,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/AR.png",
+    "icon_type": "AR",
+    "id": 211849,
+    "in_use_station_count": 0,
+    "is_fast_charger": false,
+    "latitude": 43.35298756013454,
+    "longitude": 19.36355486512184,
+    "name": "Restaurant Taša",
+    "score": 6.9,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 929693,
+        "network_id": 1155,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2491382,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          },
+          {
+            "connector": 7,
+            "id": 2491383,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          }
+        ]
+      },
+      {
+        "id": 929694,
+        "network_id": 1155,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2491384,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          },
+          {
+            "connector": 7,
+            "id": 2491385,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/211849"
+  },
+  {
+    "access": 1,
+    "address": "43.3556188,19.3593693",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 366059,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 43.355919,
+    "longitude": 19.359371,
+    "name": "ZES - Pljevlja Municipality",
+    "score": 5.4,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 875591,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2409474,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 875592,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2409475,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/366059"
+  },
+  {
+    "access": 1,
+    "address": "4 Prvomajska, Budva, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 538132,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.28515786745555,
+    "longitude": 18.834589627855905,
+    "name": "Hotel Hermes",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1391530,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3206382,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/538132"
+  },
+  {
+    "access": 1,
+    "address": "XVI Ulica 5, Budva, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 530800,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.29295056161883,
+    "longitude": 18.840294383168686,
+    "name": "Hotel Momentum EV Charger",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1370429,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3171418,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1370430,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3171419,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/530800"
+  },
+  {
+    "access": 1,
+    "address": "Ulica Oktoih III, Podgorica, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 623865,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.41746020483201,
+    "longitude": 19.200475786458913,
+    "name": "Voco electrip EV charger",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1639310,
+        "network_id": 1470,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3635555,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1639311,
+        "network_id": 1470,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3635556,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/623865"
+  },
+  {
+    "access": 1,
+    "address": "98 Bulevar Džordža Vašingtona, Podgorica, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 197418,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.440856,
+    "longitude": 19.244061,
+    "name": "Crowne Plaza",
+    "score": 6.9,
+    "station_count": 3,
+    "stations": [
+      {
+        "id": 492767,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4440365,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 493769,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4440366,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 493770,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4440367,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/197418"
+  },
+  {
+    "access": 1,
+    "address": "Restoran Vista Vidikovac",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 622489,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.27775728974566,
+    "longitude": 18.833628187856377,
+    "name": "Wallbox @ Restoran Vista Vidikovac Budva",
+    "score": 5.8,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1634969,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3626341,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3626342,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/622489"
+  },
+  {
+    "access": 1,
+    "address": "9WPF+HH6, Štampar Makarije, Cetinje, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/GR.png",
+    "icon_type": "GR",
+    "id": 517158,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.386386328231836,
+    "longitude": 18.923905603587627,
+    "name": "Cetinje Štampar Makarije Parking",
+    "score": 1.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1333172,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3112490,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/517158"
+  },
+  {
+    "access": 1,
+    "address": "59 Ulica Jovana Tomasevica, Bar, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 265362,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.101887,
+    "longitude": 19.091578,
+    "name": "Hotel Princess",
+    "score": 9.0,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 582659,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 1607366,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 582660,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 1607367,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/265362"
+  },
+  {
+    "access": 1,
+    "address": "bb Sveti Stefan Beach, Sveti Stefan, 85315, MNE",
+    "available_station_count": 0,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/AR.png",
+    "icon_type": "AR",
+    "id": 187999,
+    "in_use_station_count": 0,
+    "is_fast_charger": false,
+    "latitude": 42.256158,
+    "longitude": 18.89472,
+    "name": "Parking Sveti Stefan",
+    "score": 2.2,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 929749,
+        "network_id": 1155,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2491497,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          },
+          {
+            "connector": 7,
+            "id": 2491498,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/187999"
+  },
+  {
+    "access": 1,
+    "address": "85 Bulevar Revolucije, Bar 85000, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 348747,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.10388002040789,
+    "longitude": 19.09429796040058,
+    "name": "Bar Municipality - TURISTICKA ORGANIZACIJA BAR",
+    "score": 5.5,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 870228,
+        "network_id": 1053,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2402219,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3243730,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/348747"
+  },
+  {
+    "access": 1,
+    "address": "Ive Loje Ribara, Becici, Budva",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Wall (Euro)"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 426538,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.286119,
+    "longitude": 18.869585,
+    "name": "Spa Resort Becici EV Charger",
+    "score": 9.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2400292,
+        "outlets": [
+          {
+            "connector": 10,
+            "id": 4734135,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/426538"
+  },
+  {
+    "access": 1,
+    "address": "7V4X+35F, Sveti Stefan, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 535616,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.25493428709784,
+    "longitude": 18.897867999673355,
+    "name": "Apartmani \"Kuća u maslinama\"",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1383960,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3191547,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/535616"
+  },
+  {
+    "access": 1,
+    "address": "bb Bečići, Budva, 85310, MNE",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 386338,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.281891,
+    "longitude": 18.865896,
+    "name": "Splendid Hotel Bečići",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 929690,
+        "network_id": 1155,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2491376,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "UNKNOWN"
+          },
+          {
+            "connector": 7,
+            "id": 2491377,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "UNKNOWN"
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/386338"
+  },
+  {
+    "access": 1,
+    "address": "11 IX ulica, Petrovac 85300",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 538135,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.20501778085435,
+    "longitude": 18.94531548888551,
+    "name": "Hotel Eleven",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1391536,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3206392,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/538135"
+  },
+  {
+    "access": 1,
+    "address": "Becicka Plaza bb",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 637269,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.28158064507404,
+    "longitude": 18.876068143172247,
+    "name": "Hotel Ponta Plaza",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1700219,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3751750,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3751751,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/637269"
+  },
+  {
+    "access": 1,
+    "address": "Jadranski put, Budva 85310, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 650197,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.280115127578014,
+    "longitude": 18.85945849120617,
+    "name": "Dukley Hotels & Resort",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1737760,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3840470,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 4925009,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1737761,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3840474,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 4925010,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/650197"
+  },
+  {
+    "access": 1,
+    "address": "18 M2.3, Budva, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 650193,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.28257508012,
+    "longitude": 18.857942707836628,
+    "name": "Dukley Hotels & Resort",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1740011,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3840482,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1740015,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4925011,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/650193"
+  },
+  {
+    "access": 1,
+    "address": "7 Popa Jola Zeca, Budva, Montenegro",
+    "available_station_count": 0,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/AR.png",
+    "icon_type": "AR",
+    "id": 247737,
+    "in_use_station_count": 0,
+    "is_fast_charger": false,
+    "latitude": 42.289283,
+    "longitude": 18.838125,
+    "name": "Budva Municipality Sportski Centar",
+    "score": 6.7,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 929744,
+        "network_id": 1155,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2491488,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          },
+          {
+            "connector": 7,
+            "id": 2491489,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/247737"
+  },
+  {
+    "access": 1,
+    "address": "Dionizija Mikovica BB, Bečići, 85315",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 541067,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.28460363703739,
+    "longitude": 18.880183282861314,
+    "name": "Hotel Casa Di Sofia",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1399611,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3222696,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/541067"
+  },
+  {
+    "access": 1,
+    "address": "RGFC+5V4, 13. Jula, Kolašin, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 357031,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.82287601282833,
+    "longitude": 19.52225111424923,
+    "name": "Kolasin Municipality",
+    "score": 8.4,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 851395,
+        "network_id": 1053,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3792605,
+            "is_dc": false,
+            "kilowatts": 11.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 851396,
+        "network_id": 1053,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3792606,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/357031"
+  },
+  {
+    "access": 1,
+    "address": "Mala luka ''Meljine'', Herceg - Novi, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 342529,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.45448877270725,
+    "longitude": 18.559026941657066,
+    "name": "Lazure Marina & Hotel, HN",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 810266,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2312345,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 2312346,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/342529"
+  },
+  {
+    "access": 1,
+    "address": "Mirka Veskovića bb, Kolašin, 81210, Montenegro",
+    "available_station_count": 0,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/AR.png",
+    "icon_type": "AR",
+    "id": 232784,
+    "in_use_station_count": 0,
+    "is_fast_charger": false,
+    "latitude": 42.824431,
+    "longitude": 19.52,
+    "name": "Opština Kolašin",
+    "score": 3.6,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 929675,
+        "network_id": 1155,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2491345,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          },
+          {
+            "connector": 7,
+            "id": 2491346,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/232784"
+  },
+  {
+    "access": 1,
+    "address": "62 29. Novembra, Budva, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 550498,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.290439204416685,
+    "longitude": 18.8509830395147,
+    "name": "Hotel Diplomat",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1424716,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3279458,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/550498"
+  },
+  {
+    "access": 1,
+    "address": "CMPV+68 Tivat, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 1156615,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.43670436970864,
+    "longitude": 18.695996938045727,
+    "name": "Porto Montenegro",
+    "score": 5.6,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 2534511,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 4872934,
+            "is_dc": true,
+            "kilowatts": 150.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 2534512,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 4872935,
+            "is_dc": true,
+            "kilowatts": 150.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1156615"
+  },
+  {
+    "access": 1,
+    "address": "6 29. Novembra, Budva 85310, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 413662,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.287733,
+    "longitude": 18.851429,
+    "name": "Hotel Millenium EV Charger",
+    "score": 9.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 999034,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2603232,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/413662"
+  },
+  {
+    "access": 1,
+    "address": "9 Miladina Popovića, Podgorica, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2",
+      "Wall (Euro)"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 329659,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.420589,
+    "longitude": 19.252258,
+    "name": "Hotel M",
+    "score": 9.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 775027,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2266567,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 10,
+            "id": 2266568,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/329659"
+  },
+  {
+    "access": 1,
+    "address": "Tivat",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 809379,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.43185985197967,
+    "longitude": 18.693083452136875,
+    "name": "Porto Montenegro KiBOST Tesla",
+    "score": 7.6,
+    "station_count": 3,
+    "stations": [
+      {
+        "id": 2198104,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4520343,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 2198105,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4520344,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 2198106,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4520345,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/809379"
+  },
+  {
+    "access": 1,
+    "address": "34HF+6VF, E851 Jadranska Magistrale, Tomba, Muntenegru",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2",
+      "CHAdeMO",
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 1037505,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.07864935496612,
+    "longitude": 19.125751554965973,
+    "name": "GreenCar.me",
+    "score": 1.4,
+    "station_count": 5,
+    "stations": [
+      {
+        "id": 2420952,
+        "network_id": 1574,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 4756682,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 2420953,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4755021,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 2420954,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4755022,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 2420955,
+        "outlets": [
+          {
+            "connector": 3,
+            "id": 4755023,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 2420956,
+        "outlets": [
+          {
+            "connector": 3,
+            "id": 4755024,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1037505"
+  },
+  {
+    "access": 1,
+    "address": "Benzinska pumpa, 4. Jul, Podgorica, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 462008,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.421042,
+    "longitude": 19.254396,
+    "name": "Volvo dealership, Podgorica",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1150926,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2821647,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1150927,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2821648,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/462008"
+  },
+  {
+    "access": 1,
+    "address": "34JG+55M, Tomba, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2",
+      "CHAdeMO",
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 511058,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.080547060731526,
+    "longitude": 19.126053974032402,
+    "name": "Kalamper Petrol Greencar.me",
+    "score": 2.4,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1317153,
+        "network_id": 1574,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 3086669,
+            "is_dc": true,
+            "kilowatts": 40.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 3,
+            "id": 3087131,
+            "is_dc": true,
+            "kilowatts": 40.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3087138,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/511058"
+  },
+  {
+    "access": 1,
+    "address": "29 E65, Herceg - Novi, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 528856,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.45507335306621,
+    "longitude": 18.56162568442848,
+    "name": "Hotel Maksim EV Charger",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1364121,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3162161,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/528856"
+  },
+  {
+    "access": 1,
+    "address": "17 Vuka Karadžića, Podgorica, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/GR.png",
+    "icon_type": "GR",
+    "id": 356192,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.43916669749077,
+    "longitude": 19.265215694904327,
+    "name": "17 Vuka Karadžića",
+    "score": 1.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 849093,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3719927,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/356192"
+  },
+  {
+    "access": 1,
+    "address": "Josipa Broza Tita BB",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 710923,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.43146862153428,
+    "longitude": 19.273207828908124,
+    "name": "Efel Motors & Hotel Aurel",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 2038136,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4249430,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": "UNKNOWN"
+          }
+        ]
+      },
+      {
+        "id": 2038137,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4249429,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": "UNKNOWN"
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/710923"
+  },
+  {
+    "access": 1,
+    "address": "Bulevar Svetog Petra Cetinjskog 11, Podgorica, 81000, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/GR.png",
+    "icon_type": "GR",
+    "id": 278386,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.440931,
+    "longitude": 19.253337,
+    "name": "Milana Popovića",
+    "score": 1.4,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1805555,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3969708,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3969709,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/278386"
+  },
+  {
+    "access": 1,
+    "address": "23 Prvomajska ulica Budva 85310, Budva, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/GR.png",
+    "icon_type": "GR",
+    "id": 216739,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.280098326099825,
+    "longitude": 18.836364606151566,
+    "name": "Merit Starlit Hotel & Residence",
+    "score": 1.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1807097,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3972943,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3972944,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/216739"
+  },
+  {
+    "access": 1,
+    "address": "10 Mediteranska, Budva 85310",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 323597,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.281212,
+    "longitude": 18.836218,
+    "name": "Boutique Hotel Vissi d'Arte - EV Charging Point",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 757580,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2243146,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/323597"
+  },
+  {
+    "access": 1,
+    "address": "CJM2+M2J, Kumbor, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 413646,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.434754,
+    "longitude": 18.60069,
+    "name": "Portonovi - EV Charging Station",
+    "score": 9.0,
+    "station_count": 3,
+    "stations": [
+      {
+        "id": 998997,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2603189,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 998998,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2603190,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 998999,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2603191,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/413646"
+  },
+  {
+    "access": 1,
+    "address": "7VJG+RP6 Bečići",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 948744,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.2820375,
+    "longitude": 18.8767656,
+    "name": "Hotel Invictus Bečići",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2329926,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4662139,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/948744"
+  },
+  {
+    "access": 1,
+    "address": "C6JV+F93, Ilije Plamenca, Podgorica, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2",
+      "CHAdeMO",
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 226196,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.430809,
+    "longitude": 19.24339,
+    "name": "Petrol Podgorica",
+    "score": 3.5,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1811444,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3982362,
+            "is_dc": false,
+            "kilowatts": 43.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 20,
+            "id": 3982363,
+            "is_dc": true,
+            "kilowatts": 50.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 3,
+            "id": 3982364,
+            "is_dc": true,
+            "kilowatts": 50.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/226196"
+  },
+  {
+    "access": 1,
+    "address": "bb Jadranski put, Budva 85311",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 1391809,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.2873419832363,
+    "longitude": 18.851219589132594,
+    "name": "Hotel Luminoso",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2794281,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 5151180,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1391809"
+  },
+  {
+    "access": 1,
+    "address": "2 Avalska, Pljevlja, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 995651,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 43.3555868225776,
+    "longitude": 19.35951663006395,
+    "name": "Parking",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2382025,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 4715913,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/995651"
+  },
+  {
+    "access": 1,
+    "address": "44, Ulica Tuzi 1, Tuzi",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 344708,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.368521,
+    "longitude": 19.32716,
+    "name": "Tuzi Municipality",
+    "score": 10.0,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 815855,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2319961,
+            "is_dc": false,
+            "kilowatts": 11.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 873972,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2407211,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/344708"
+  },
+  {
+    "access": 1,
+    "address": "Residence Teuta, Setaliste kroz Porto Montenegro, Tivat, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 187996,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.4351075,
+    "longitude": 18.6939397,
+    "name": "Porto Montenegro",
+    "score": 9.0,
+    "station_count": 3,
+    "stations": [
+      {
+        "id": 424093,
+        "network_id": 35,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 742260,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 424094,
+        "network_id": 35,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 742261,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 425484,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 744083,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/187996"
+  },
+  {
+    "access": 1,
+    "address": "bb Ulica Baja Piuljanina, Cetinje, 81250, MNE",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 386310,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.387501,
+    "longitude": 18.927221,
+    "name": "Cetinje Municipality",
+    "score": 1.9,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1772130,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 3900347,
+            "is_dc": true,
+            "kilowatts": 30.0,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/386310"
+  },
+  {
+    "access": 1,
+    "address": "RJRQ+HR Katun Bačko brdo, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 1534921,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.84137592472789,
+    "longitude": 19.6396171206499,
+    "name": "kolasin 1600",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2946795,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 5312038,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1534921"
+  },
+  {
+    "access": 1,
+    "address": "Stari Bar",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Three Phase",
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 626974,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.09131655772916,
+    "longitude": 19.129827460126858,
+    "name": "Apartments Villa St. Bar",
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1672538,
+        "outlets": [
+          {
+            "connector": 14,
+            "id": 3689889,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1672539,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3689890,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3689891,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/626974"
+  },
+  {
+    "access": 1,
+    "address": "Bećići",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 328580,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.285078,
+    "longitude": 18.86654,
+    "name": "Atrium apartments",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 771896,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2262464,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/328580"
+  },
+  {
+    "access": 1,
+    "address": "Jadranska Magistrala BB",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 2233478,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.45344819705218,
+    "longitude": 18.748653291990426,
+    "name": "NTC shop prčanj",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 3704218,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 6141549,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/2233478"
+  },
+  {
+    "access": 1,
+    "address": "542H+PHC Žabljak, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2",
+      "CHAdeMO",
+      "J-1772",
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 2147012,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 43.15180833886715,
+    "longitude": 19.128874970017733,
+    "name": "EKO Žabljak",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 3573651,
+        "outlets": [
+          {
+            "connector": 2,
+            "id": 5967958,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 5967959,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 3,
+            "id": 5967960,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 20,
+            "id": 5967961,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/2147012"
+  },
+  {
+    "access": 1,
+    "address": "21. Maja BB",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 1969547,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.956467245349536,
+    "longitude": 19.576147417675855,
+    "name": "TO Mojkovac",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 3395233,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 5779237,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 5779238,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1969547"
+  },
+  {
+    "access": 1,
+    "address": "bb Zabrđe, Cetinje, 81250, MNE",
+    "available_station_count": 0,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/AR.png",
+    "icon_type": "AR",
+    "id": 386340,
+    "in_use_station_count": 0,
+    "is_fast_charger": false,
+    "latitude": 42.351788,
+    "longitude": 18.933107,
+    "name": "Restoran Konak",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 929692,
+        "network_id": 1155,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2491380,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          },
+          {
+            "connector": 7,
+            "id": 2491381,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/386340"
+  },
+  {
+    "access": 1,
+    "address": "5436+9C Žabljak, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 363342,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 43.153405,
+    "longitude": 19.111123,
+    "name": "SOA Hotel - Žabljak",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 868304,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2399679,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/363342"
+  },
+  {
+    "access": 1,
+    "address": "Tufe Softica",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 1969514,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.84296495429077,
+    "longitude": 19.873958150091003,
+    "name": "Opština Berane",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 3395200,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 5779235,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 5779236,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1969514"
+  },
+  {
+    "access": 1,
+    "address": "55 Mainski put, Budva, Черногория",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 584557,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.29540139376992,
+    "longitude": 18.84453099220991,
+    "name": "SMART RENTAL CABRIO",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 1519793,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3431660,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/584557"
+  },
+  {
+    "access": 1,
+    "address": "58 Жертв фашизму вулиця, Будва, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 753754,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.29429630160651,
+    "longitude": 18.83954543620348,
+    "name": "Mega Mall",
+    "score": 10.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2146040,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 4468444,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 20,
+            "id": 4760238,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/753754"
+  },
+  {
+    "access": 1,
+    "address": "58 Žrtava Fašizma, Budva, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 1086922,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.29424973695811,
+    "longitude": 18.839565740082097,
+    "name": "evlink",
+    "score": 9.0,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 2466777,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 4801793,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 2466778,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 4801794,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1086922"
+  },
+  {
+    "access": 1,
+    "address": "18 Vučedolska, Podgorica, 81000, MNE",
+    "available_station_count": 0,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/AR.png",
+    "icon_type": "AR",
+    "id": 386333,
+    "in_use_station_count": 0,
+    "is_fast_charger": false,
+    "latitude": 42.441223,
+    "longitude": 19.261639,
+    "name": "Vučedolska",
+    "score": 1.0,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 929685,
+        "network_id": 1155,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 2491368,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          },
+          {
+            "connector": 7,
+            "id": 2491369,
+            "is_dc": false,
+            "kilowatts": 15.36,
+            "power": 0,
+            "power_type": "AC",
+            "status": "OUTOFORDER"
+          }
+        ]
+      }
+    ],
+    "under_repair": true,
+    "url": "http://api.plugshare.com/view/location/386333"
+  },
+  {
+    "access": 1,
+    "address": "9WX8+83C, Cetinje, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 2195153,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.39825740516476,
+    "longitude": 18.915045880030238,
+    "name": "Voltic/Ecotap",
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 3661368,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 6097330,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/2195153"
+  },
+  {
+    "access": 1,
+    "address": "CHPX+9G8, Kumbor, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/G.png",
+    "icon_type": "G",
+    "id": 413647,
+    "in_use_station_count": null,
+    "is_fast_charger": false,
+    "latitude": 42.435611,
+    "longitude": 18.600445,
+    "name": "Portonovi Outdoor",
+    "score": 6.4,
+    "station_count": 2,
+    "stations": [
+      {
+        "id": 1807349,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3973531,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3973532,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      },
+      {
+        "id": 1807350,
+        "outlets": [
+          {
+            "connector": 7,
+            "id": 3973533,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3973534,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 3973535,
+            "is_dc": false,
+            "kilowatts": 22.0,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/413647"
+  },
+  {
+    "access": 1,
+    "address": "CMPV+3FX, Tivat, Montenegro",
+    "available_station_count": null,
+    "coming_soon": false,
+    "connector_types": [
+      "CCS2",
+      "Type 2"
+    ],
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 1151611,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 42.43537030463301,
+    "longitude": 18.694005469285642,
+    "name": "EV Charging Station Porto Montenegro",
+    "score": 3.6,
+    "station_count": 1,
+    "stations": [
+      {
+        "id": 2529380,
+        "outlets": [
+          {
+            "connector": 20,
+            "id": 4867468,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 20,
+            "id": 4867469,
+            "is_dc": true,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "DC",
+            "status": null
+          },
+          {
+            "connector": 7,
+            "id": 4867470,
+            "is_dc": false,
+            "kilowatts": null,
+            "power": 0,
+            "power_type": "AC",
+            "status": null
+          }
+        ]
+      }
+    ],
+    "under_repair": false,
+    "url": "http://api.plugshare.com/view/location/1151611"
+  }
+]

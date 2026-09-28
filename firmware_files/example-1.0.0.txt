@@ -1,0 +1,6 @@
+OCPP POC firmware image stand-in, version 1.0.0.
+
+This project's UpdateFirmware flow (see instructions/06-remaining-flows.md section H) is
+demonstrated with plain text files placed in this directory rather than real binary firmware
+images -- see main.py's handle_firmware_request for why. Real hardware would fetch an actual
+binary blob from the URL this Central System constructs for it.

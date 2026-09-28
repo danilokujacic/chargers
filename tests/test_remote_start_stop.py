@@ -323,7 +323,7 @@ async def test_remote_start_rejects_connector_zero(
         )
 
 
-async def test_remote_start_when_not_connected_raises_clear_error(charge_point_identity):
+async def test_remote_start_when_not_connected_raises_clear_error(db, charge_point_identity):
     await ChargePoint.register(
         charge_point_identity, registration_status="Accepted"
     )
@@ -331,7 +331,7 @@ async def test_remote_start_when_not_connected_raises_clear_error(charge_point_i
         await main.send_remote_start_transaction(charge_point_identity, "TAG")
 
 
-async def test_remote_stop_when_not_connected_raises_clear_error(charge_point_identity):
+async def test_remote_stop_when_not_connected_raises_clear_error(db, charge_point_identity):
     await ChargePoint.register(
         charge_point_identity, registration_status="Accepted"
     )

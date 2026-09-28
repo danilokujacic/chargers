@@ -15,11 +15,13 @@ import pytest_asyncio
 import websockets
 from ocpp.v16 import ChargePoint as cp
 from ocpp.v16.enums import RegistrationStatus
+import redis.asyncio as redis_asyncio
 from pymongo import AsyncMongoClient
 from pymongo.errors import PyMongoError
 from websockets.typing import Subprotocol
 
 import main
+from api.config import redis_url
 from models import ChargePoint, IdTag, init_db, mongodb_url
 from ocpp_client_auth import basic_auth_header
 
@@ -39,6 +41,22 @@ async def mongodb_available():
         pytest.skip(f"MongoDB is not reachable at {mongodb_url()}: {exc}")
     finally:
         await client.close()
+
+
+@pytest_asyncio.fixture(scope="session")
+async def redis_available():
+    """Ping Redis once; skip the tests that need it if it is not reachable.
+
+    Modelled on mongodb_available: Redis only backs the public API's WebSocket layer
+    (08-public-api-service.md), so a machine without it skips those tests rather than failing.
+    """
+    client = redis_asyncio.Redis.from_url(redis_url())
+    try:
+        await client.ping()
+    except Exception as exc:
+        pytest.skip(f"Redis is not reachable at {redis_url()}: {exc}")
+    finally:
+        await client.aclose()
 
 
 @pytest.fixture(scope="session")

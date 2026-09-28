@@ -62,7 +62,11 @@ Rules:
 | 04 | [normal-charge-flow.md](04-normal-charge-flow.md) | 01, 03 |
 | 05 | [normal-charge-flow-tests.md](05-normal-charge-flow-tests.md) | 04 |
 | 06 | [remaining-flows.md](06-remaining-flows.md) | 04, 05 |
-| 06a | [remaining-flows-progress.md](06a-remaining-flows-progress.md) | 06 (read this before continuing 06 -- section A is done, B-J are not) |
+| 06a | [remaining-flows-progress.md](06a-remaining-flows-progress.md) | 06 (read this before continuing 06 -- sections A-H are done, I and J are not) |
+| 07 | [public-map-platform.md](07-public-map-platform.md) | 04, 05 for §A/§B; the frontend (now detailed in 10) additionally depends on 08 being built first. A new, separate public-facing platform -- does not depend on 06's remaining sections I/J. |
+| 08 | [public-api-service.md](08-public-api-service.md) | 07's §A (the `Site` data model) must exist first |
+| 09 | [plugshare-import.md](09-plugshare-import.md) | 07's §A (needs the `Site` document's `source`/`external_*` fields) |
+| 10 | [frontend-nextjs.md](10-frontend-nextjs.md) | 08 (nothing to fetch or subscribe to before the API exists) |
 
 ## What already exists
 

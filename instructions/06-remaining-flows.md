@@ -1,9 +1,9 @@
 # 06 — Remaining flows
 
-> **Status:** section A (Remote start and stop) is done. Read
-> [06a-remaining-flows-progress.md](06a-remaining-flows-progress.md) before starting on B or
-> later -- it records what section A already built that B-J should reuse (an admin HTTP API on
-> `main.py`, `operate.py`, a simulator idle/reactive mode) and traps found while building it.
+> **Status:** every section, A through J, is done. Read
+> [06a-remaining-flows-progress.md](06a-remaining-flows-progress.md) for what each one built
+> (an admin HTTP API on `main.py`, `operate.py`, a simulator idle/reactive mode, ...) and the
+> traps found while building it, before extending any of them.
 
 Everything beyond commissioning and the normal charge. Each section is independently
 implementable; do them in the order listed, which is roughly by usefulness.
