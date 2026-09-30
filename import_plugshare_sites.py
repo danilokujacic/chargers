@@ -27,26 +27,13 @@ def parse_args():
     return parser.parse_args()
 
 
-async def main(args):
-    try:
-        await init_db()
-    except PyMongoError as e:
-        print(f"Error: MongoDB unreachable: {e}", file=sys.stderr)
-        return 1
+async def import_entries(entries, dry_run=False):
+    """Create or update one Site per PlugShare location in `entries` (the parsed export).
 
-    # Load the JSON file
-    file_path = Path(args.file)
-    if not file_path.exists():
-        print(f"Error: File not found: {args.file}", file=sys.stderr)
-        return 1
-
-    try:
-        with open(file_path) as f:
-            entries = json.load(f)
-    except (json.JSONDecodeError, IOError) as e:
-        print(f"Error reading {args.file}: {e}", file=sys.stderr)
-        return 1
-
+    Returns (created, updated, skipped, skipped_entries). The update path deliberately never
+    sets `source`, so a site converted by seed_demo_fleet.py stays `simulated`
+    (11-demo-fleet.md §C). Needs init_db() to have run; main() is the CLI around this.
+    """
     created = 0
     updated = 0
     skipped = 0
@@ -80,7 +67,7 @@ async def main(args):
 
         if existing_site:
             # Update existing site
-            if not args.dry_run:
+            if not dry_run:
                 await existing_site.set({
                     "name": name,
                     "latitude": latitude,
@@ -94,7 +81,7 @@ async def main(args):
             updated += 1
         else:
             # Create new site
-            if not args.dry_run:
+            if not dry_run:
                 site = Site(
                     name=name,
                     site_type=SiteType.other,
@@ -109,6 +96,33 @@ async def main(args):
                 )
                 await site.insert()
             created += 1
+
+    return created, updated, skipped, skipped_entries
+
+
+async def main(args):
+    try:
+        await init_db()
+    except PyMongoError as e:
+        print(f"Error: MongoDB unreachable: {e}", file=sys.stderr)
+        return 1
+
+    # Load the JSON file
+    file_path = Path(args.file)
+    if not file_path.exists():
+        print(f"Error: File not found: {args.file}", file=sys.stderr)
+        return 1
+
+    try:
+        with open(file_path) as f:
+            entries = json.load(f)
+    except (json.JSONDecodeError, IOError) as e:
+        print(f"Error reading {args.file}: {e}", file=sys.stderr)
+        return 1
+
+    created, updated, skipped, skipped_entries = await import_entries(
+        entries, args.dry_run
+    )
 
     # Report results
     print(f"created: {created}")

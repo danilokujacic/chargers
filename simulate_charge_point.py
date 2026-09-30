@@ -25,6 +25,7 @@ import asyncio
 import json
 import logging
 import pathlib
+import time
 from datetime import UTC, datetime
 from urllib.parse import quote
 
@@ -168,9 +169,11 @@ class SimulatedChargePoint(cp):
         default_connector_id=1,
         boot_vendor="PocVendor",
         boot_model="PocModel",
+        number_of_connectors=1,
         **kwargs,
     ):
         super().__init__(id, connection, **kwargs)
+        self.number_of_connectors = number_of_connectors
         self.authorization_key = authorization_key
         self.reject_key_change = reject_key_change
         self.key_change_handled = asyncio.Event()
@@ -221,7 +224,7 @@ class SimulatedChargePoint(cp):
         self.configuration = {
             AUTHORIZATION_KEY_CONFIG_KEY: (None, True),
             "HeartbeatInterval": ("30", False),
-            "NumberOfConnectors": ("1", True),
+            "NumberOfConnectors": (str(number_of_connectors), True),
             # OCPP 1.6 s3.5/s3.6: govern stand-alone operation. This simulator keeps a real
             # Authorization Cache and Local Authorization List either way (see
             # authorization_cache/local_list below) and honours LocalPreAuthorize (see
@@ -267,9 +270,19 @@ class SimulatedChargePoint(cp):
         # controller), so a ChangeAvailability(connectorId=0) -- "the Charge Point and all
         # Connectors" (s5.2) -- knows which connectors that "all" covers.
         self.known_connectors = set()
+        # connector_id -> time.monotonic() when its reported status last changed, so a caller
+        # can tell how long a connector has been in its current state (the demo fleet's
+        # unplug-after-Finishing timer).
+        self.status_since = {}
         # connector_id -> AvailabilityType, for an Inoperative request answered Scheduled
         # because a transaction was in progress: applied once that transaction ends (s5.2).
         self.deferred_availability = {}
+        # id_tag -> connector_id chosen by on_remote_start_transaction, so the @after half
+        # starts on the same connector, and so busy_connectors() holds it until then.
+        self.pending_remote_starts = {}
+        # Connectors in the middle of start_local_session, between Authorize and the
+        # StartTransaction.conf, when they are not yet in open_transactions.
+        self.pending_local_starts = set()
 
     @on(Action.change_configuration)
     def on_change_configuration(self, key, value, **kwargs):
@@ -403,17 +416,26 @@ class SimulatedChargePoint(cp):
             self.connector_states[connector_id] = state
         return state
 
-    async def send_status(self, connector_id, status, error_code=ChargePointErrorCode.no_error):
+    async def send_status(
+        self, connector_id, status, error_code=ChargePointErrorCode.no_error, info=None
+    ):
         """Send StatusNotification and keep get_connector_state's mirror in sync.
 
         Every status this simulator reports goes through here, rather than a bare
         call.StatusNotification, so ChangeAvailability's legality/transaction checks are always
         working from what was actually sent, exactly as main.py's on_status does on the Central
         System side.
+
+        `info` is StatusNotification's free-text field, a CiString50 in OCPP 1.6 s6.47. None is
+        left out of the payload entirely: the ocpp library strips None fields before sending.
         """
+        if info is not None and len(info) > 50:
+            raise ValueError(f"StatusNotification info is at most 50 characters: {info!r}")
         if connector_id != 0:
             self.known_connectors.add(connector_id)
         state = self.get_connector_state(connector_id)
+        if state.status != status or connector_id not in self.status_since:
+            self.status_since[connector_id] = time.monotonic()
         try:
             state.change_to(status)
         except IllegalTransition:
@@ -422,10 +444,38 @@ class SimulatedChargePoint(cp):
             state.force_status(status)
         await self.call(
             call.StatusNotification(
-                connector_id=connector_id, error_code=error_code, status=status, timestamp=now()
+                connector_id=connector_id,
+                error_code=error_code,
+                status=status,
+                info=info,
+                timestamp=now(),
             ),
             suppress=False,
         )
+
+    async def send_boot_statuses(self, faulted=frozenset()):
+        """Report every physical connector after an Accepted boot, in ascending order:
+        Available, or Faulted for the ids in `faulted`. A real charger reports each of its
+        connectors after booting, which is what lets a map show all of them.
+
+        A connector already reported on this connection is skipped. The Central System re-sends
+        a persisted ChangeAvailability(Inoperative) straight after the boot conf (main.py's
+        reapply_persisted_availability), and that Unavailable must not be overwritten by a late
+        Available from here. send_status marks a connector known before its first await, so
+        this check cannot race with it.
+        """
+        for connector_id in sorted(self.physical_connectors()):
+            if connector_id in self.known_connectors:
+                continue
+            if connector_id in faulted:
+                await self.send_status(
+                    connector_id,
+                    ChargePointStatus.faulted,
+                    error_code=ChargePointErrorCode.other_error,
+                    info="Out of order (PlugShare report)",
+                )
+            else:
+                await self.send_status(connector_id, ChargePointStatus.available)
 
     async def simulate_fault_and_recover(self, connector_id, error_code, fault_duration_seconds=2):
         """Report a fault, then recover from it (OCPP 1.6 s4.9's A9/.../H9 -> Faulted, then
@@ -446,6 +496,7 @@ class SimulatedChargePoint(cp):
         state = self.get_connector_state(connector_id)
         target = state.pre_fault_status
         state.recover_from_fault()  # raises if not currently Faulted, or nothing was recorded
+        self.status_since[connector_id] = time.monotonic()
         if connector_id != 0:
             self.known_connectors.add(connector_id)
         await self.call(
@@ -791,15 +842,32 @@ class SimulatedChargePoint(cp):
                 self.physical_connectors()
             )
             for target in targets:
-                await self._send_meter_values(target)
+                await self.send_meter_values(target)
 
     def physical_connectors(self):
-        """Connectors this charger physically has: every one it has reported on, plus its
-        default one -- so an idle charger that has not sent anything yet still owns connector 1.
+        """Connectors this charger physically has: 1..NumberOfConnectors, every one it has
+        reported on, and its default one -- so an idle charger that has not sent anything yet
+        still owns all of its connectors.
         """
-        return self.known_connectors | {self.default_connector_id}
+        return (
+            set(range(1, self.number_of_connectors + 1))
+            | self.known_connectors
+            | {self.default_connector_id}
+        )
 
-    async def _send_meter_values(self, connector_id):
+    def busy_connectors(self):
+        """Connectors that already have a session, or are about to: an open transaction, a
+        remote start accepted but not yet started, or a local start in progress. Nothing may
+        start a second session on one of these."""
+        return (
+            set(self.open_transactions)
+            | set(self.pending_remote_starts.values())
+            | self.pending_local_starts
+        )
+
+    async def send_meter_values(self, connector_id):
+        """Send this connector's current energy register (meter_readings) as MeterValues, tied
+        to its open transaction if it has one."""
         transaction_id = self.open_transactions.get(connector_id)
         await self.call(
             call.MeterValues(
@@ -847,7 +915,10 @@ class SimulatedChargePoint(cp):
         if reset_type == ResetType.soft:
             for connector_id, transaction_id in list(self.open_transactions.items()):
                 await self.finish_transaction(
-                    connector_id, transaction_id, meter_stop=0, reason=Reason.soft_reset
+                    connector_id,
+                    transaction_id,
+                    meter_stop=self.meter_readings.get(connector_id, 0),
+                    reason=Reason.soft_reset,
                 )
         self.reboot_reason = reset_type
         print(f"RESET: closing the connection to simulate a {reset_type} reboot")
@@ -921,7 +992,13 @@ class SimulatedChargePoint(cp):
         if self.reject_remote_start:
             print(f"REMOTE START: rejecting request for {id_tag} (--reject-remote-start)")
             return call_result.RemoteStartTransaction(status=RemoteStartStopStatus.rejected)
-        connector_id = connector_id or self.default_connector_id
+        connector_id = connector_id or self._free_connector()
+        if connector_id in self.busy_connectors():
+            # A second transaction on a connector that already has one would leave the first
+            # open on the Central System with nobody to stop it. OCPP 1.6 s5.11: the conf says
+            # "whether it has accepted the request and will attempt to start a transaction".
+            print(f"REMOTE START: connector {connector_id} already has a session; rejecting")
+            return call_result.RemoteStartTransaction(status=RemoteStartStopStatus.rejected)
         profile_data = kwargs.get("charging_profile")
         if profile_data is not None and not self.no_smart_charging:
             # s5.16.2: it must be a TxProfile without a transactionId; the charger applies it to
@@ -944,7 +1021,20 @@ class SimulatedChargePoint(cp):
             f"REMOTE START: accepted for id_tag={id_tag} connector={connector_id} "
             f"(AuthorizeRemoteTxRequests={self.authorize_remote_tx_requests})"
         )
+        self.pending_remote_starts[id_tag] = connector_id
         return call_result.RemoteStartTransaction(status=RemoteStartStopStatus.accepted)
+
+    def _free_connector(self):
+        """The connector a RemoteStartTransaction without a connectorId starts on: the
+        lowest-numbered one that is Available and not busy, else the default connector."""
+        busy = self.busy_connectors()
+        for connector_id in sorted(self.physical_connectors()):
+            if (
+                connector_id not in busy
+                and self.get_connector_state(connector_id).status == ChargePointStatus.available
+            ):
+                return connector_id
+        return self.default_connector_id
 
     @after(Action.remote_start_transaction)
     async def after_remote_start_transaction(self, id_tag, connector_id=None, **kwargs):
@@ -953,10 +1043,22 @@ class SimulatedChargePoint(cp):
         Split from on_remote_start_transaction via the ocpp library's @after hook (see
         main.py's after_boot for why a bare asyncio.create_task cannot give the same ordering
         guarantee): the conf must reach the Central System before this sends anything else.
+
+        The connector is the one on_remote_start_transaction chose and recorded. No record means
+        the conf was Rejected, and nothing is started. The record is dropped only once this
+        finishes, so busy_connectors() covers the connector for the whole start.
         """
-        if self.reject_remote_start:
+        if id_tag not in self.pending_remote_starts:
             return
-        connector_id = connector_id or self.default_connector_id
+        try:
+            await self._start_remote_transaction(
+                id_tag, self.pending_remote_starts[id_tag], **kwargs
+            )
+        finally:
+            self.pending_remote_starts.pop(id_tag, None)
+
+    async def _start_remote_transaction(self, id_tag, connector_id, **kwargs):
+        """The body of after_remote_start_transaction, on the connector already chosen."""
         if self.authorize_remote_tx_requests:
             # OCPP 1.6 s3.6: LocalPreAuthorize lets a charger "start a transaction without
             # waiting for a response from the Central System" -- even while online -- by
@@ -977,16 +1079,20 @@ class SimulatedChargePoint(cp):
                     )
                     return
         await self.send_status(connector_id, ChargePointStatus.preparing)
+        # The connector's energy register carries on from wherever it stands: a meter never
+        # resets to 0 for a new session, and stopping at the register keeps energy positive.
+        meter_start = self.meter_readings.get(connector_id, 0)
         start = await self.call(
             call.StartTransaction(
-                connector_id=connector_id, id_tag=id_tag, meter_start=0, timestamp=now()
+                connector_id=connector_id, id_tag=id_tag, meter_start=meter_start,
+                timestamp=now(),
             ),
             suppress=False,
         )
         self._cache_id_tag_info(id_tag, start.id_tag_info)
         self.open_transactions[connector_id] = start.transaction_id
         self.transaction_started_at[connector_id] = datetime.now(UTC)
-        self.meter_readings[connector_id] = 0
+        self.meter_readings[connector_id] = meter_start
         profile_data = kwargs.get("charging_profile")
         if profile_data is not None and not self.no_smart_charging:
             profile = parse_profile(profile_data).model_copy(
@@ -1014,7 +1120,10 @@ class SimulatedChargePoint(cp):
         if connector_id is None:
             return
         await self.finish_transaction(
-            connector_id, transaction_id, meter_stop=0, reason=Reason.remote
+            connector_id,
+            transaction_id,
+            meter_stop=self.meter_readings.get(connector_id, 0),
+            reason=Reason.remote,
         )
         print(
             f"REMOTE STOP: transaction_id={transaction_id} stopped, "
@@ -1027,8 +1136,9 @@ class SimulatedChargePoint(cp):
         """Send StopTransaction, report Finishing, and apply any availability change that was
         waiting on this transaction to end (see _availability_blocked / deferred_availability).
 
-        Shared by run_scenario's scripted stop and after_remote_stop_transaction, so a
-        ChangeAvailability(Inoperative) deferred by either path gets applied the same way.
+        Shared by run_scenario's scripted stop, after_remote_stop_transaction and the demo
+        fleet (run_demo_fleet.py), so a ChangeAvailability(Inoperative) deferred by any of them
+        gets applied the same way.
         """
         kwargs = {}
         if id_tag is not None:
@@ -1053,6 +1163,45 @@ class SimulatedChargePoint(cp):
         if deferred is not None:
             await self._apply_availability(connector_id, deferred)
         return stop
+
+    async def start_local_session(self, connector_id, id_tag):
+        """A driver presents id_tag at connector_id and plugs in: authorize, report Preparing,
+        start the transaction, report Charging. Returns the transaction id, or None when the
+        session did not start.
+
+        Authorize comes first, so a refused tag never touches the connector. If
+        StartTransaction.conf then refuses the tag after all, the transaction already exists
+        on the Central System and is ended at once with DeAuthorized -- OCPP 1.6 s7.36: "stopped
+        because of the authorization status in a StartTransaction.conf" -- rather than left open.
+        """
+        self.pending_local_starts.add(connector_id)
+        try:
+            auth = await self.authorize(id_tag)
+            if auth.id_tag_info["status"] != AuthorizationStatus.accepted:
+                return None
+            await self.send_status(connector_id, ChargePointStatus.preparing)
+            meter_start = self.meter_readings.get(connector_id, 0)
+            start = await self.call(
+                call.StartTransaction(
+                    connector_id=connector_id, id_tag=id_tag, meter_start=meter_start,
+                    timestamp=now(),
+                ),
+                suppress=False,
+            )
+            self._cache_id_tag_info(id_tag, start.id_tag_info)
+            self.open_transactions[connector_id] = start.transaction_id
+            self.transaction_started_at[connector_id] = datetime.now(UTC)
+            self.meter_readings[connector_id] = meter_start
+        finally:
+            self.pending_local_starts.discard(connector_id)
+        if start.id_tag_info["status"] != AuthorizationStatus.accepted:
+            await self.finish_transaction(
+                connector_id, start.transaction_id, meter_stop=meter_start,
+                reason=Reason.de_authorized,
+            )
+            return None
+        await self.send_status(connector_id, ChargePointStatus.charging)
+        return start.transaction_id
 
 
 def check(step, ok, detail):
@@ -1099,6 +1248,10 @@ async def idle_for_remote_control(charge_point, args):
     """
     boot = await perform_boot(charge_point, args)
     print(f"BOOT: status={boot.status} interval={boot.interval}s")
+    if boot.status == RegistrationStatus.accepted:
+        # A real charger reports each of its connectors after booting, so a multi-connector
+        # charger run by hand shows all of them on the map, not just the one it charges on.
+        await charge_point.send_boot_statuses()
     if args.simulate_fault is not None:
         await charge_point.simulate_fault_and_recover(
             args.connector_id, ChargePointErrorCode(args.simulate_fault)
@@ -1248,6 +1401,7 @@ async def run_connection(args, identity, key, uri, reconnect_after_reboot=False)
             decline_diagnostics=args.decline_diagnostics,
             fail_diagnostics_upload=args.fail_diagnostics_upload,
             default_connector_id=args.connector_id,
+            number_of_connectors=args.number_of_connectors,
         )
         # start() consumes the socket; call() needs it running to get responses.
         listener = asyncio.create_task(charge_point.start())
@@ -1424,6 +1578,12 @@ def parse_args():
     )
     parser.add_argument("--id-tag", default="TAG001", help="RFID tag used to authorize")
     parser.add_argument("--connector-id", type=int, default=1, help="connector to charge on")
+    parser.add_argument(
+        "--number-of-connectors",
+        type=int,
+        default=1,
+        help="how many connectors this charger has (its NumberOfConnectors configuration key)",
+    )
     parser.add_argument("--meter-start", type=int, default=0, help="meter reading in Wh at start")
     parser.add_argument("--energy", type=int, default=1500, help="Wh charged during the session")
     parser.add_argument("--vendor", default="PocVendor", help="charge point vendor")
@@ -1432,4 +1592,9 @@ def parse_args():
     return parser.parse_args()
 
 
-raise SystemExit(asyncio.run(main(parse_args())))
+# Guarded, like main.py and for the same reason: run_demo_fleet.py and the tests import
+# SimulatedChargePoint from this module, and an unguarded call would parse their command line
+# and run a scripted session on every import. `python simulate_charge_point.py ...` is
+# unaffected: __name__ is "__main__" only when run directly.
+if __name__ == "__main__":
+    raise SystemExit(asyncio.run(main(parse_args())))

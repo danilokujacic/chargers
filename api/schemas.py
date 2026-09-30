@@ -8,6 +8,8 @@ class SiteSummary(BaseModel):
     id: str
     name: str
     site_type: str
+    # "operator", "external_reference", or "simulated" (a demo site from 11-demo-fleet.md,
+    # live exactly like "operator").
     source: str
     latitude: float
     longitude: float
@@ -20,6 +22,11 @@ class ConnectorOut(BaseModel):
     connector_id: int
     status: str
     error_code: str
+    # The hardware, from the charger's ConnectorSpec: plug (e.g. "CCS2"), "AC"/"DC", and rated
+    # kW. None when nobody described this connector, or (kW only) when its rating is unknown.
+    connector_type: str | None = None
+    power_type: str | None = None
+    max_power_kw: float | None = None
 
 
 class ChargePointInSite(BaseModel):
@@ -31,7 +38,7 @@ class SiteDetail(BaseModel):
     id: str
     name: str
     site_type: str
-    source: str
+    source: str  # as in SiteSummary
     latitude: float
     longitude: float
     address: str | None = None

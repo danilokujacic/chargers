@@ -36,14 +36,31 @@ def aggregate_status(source, statuses):
     return "unavailable"
 
 
-def _connector_outs(records):
-    return [
-        ConnectorOut(
-            connector_id=r.connector_id, status=r.status.value, error_code=r.error_code.value
+def _connector_outs(records, specs=()):
+    """One ConnectorOut per connector: its ConnectorStatus row merged with its ConnectorSpec,
+    matched by connector_id.
+
+    A connector with a spec but no status row -- the charger has never reported it -- is still
+    listed, as Unavailable, the same verdict a site with no reported connectors gets. A status
+    row without a spec (every real charger today) is listed as before, hardware fields None.
+    """
+    statuses = {r.connector_id: r for r in records if r.connector_id != 0}
+    by_id = {spec.connector_id: spec for spec in specs}
+    outs = []
+    for connector_id in sorted(statuses.keys() | by_id.keys()):
+        record = statuses.get(connector_id)
+        spec = by_id.get(connector_id)
+        outs.append(
+            ConnectorOut(
+                connector_id=connector_id,
+                status=record.status.value if record else "Unavailable",
+                error_code=record.error_code.value if record else "NoError",
+                connector_type=spec.connector_type if spec else None,
+                power_type=spec.power_type.value if spec else None,
+                max_power_kw=spec.max_power_kw if spec else None,
+            )
         )
-        for r in sorted(records, key=lambda r: r.connector_id)
-        if r.connector_id != 0
-    ]
+    return outs
 
 
 def _aggregate_statuses(records):
@@ -134,7 +151,8 @@ async def _charge_points_in(members):
     connectors = await _connectors_by_identity(cp.identity for cp in members)
     return [
         ChargePointInSite(
-            identity=cp.identity, connectors=_connector_outs(connectors.get(cp.identity, []))
+            identity=cp.identity,
+            connectors=_connector_outs(connectors.get(cp.identity, []), cp.connector_specs),
         )
         for cp in sorted(members, key=lambda cp: cp.identity)
     ]
@@ -162,7 +180,9 @@ async def site_detail(site_id):
     if site is None:
         return None
     members = []
-    if site.source == SiteSource.operator:
+    # Every source but external_reference is live (operator, and the demo's simulated), the
+    # same rule list_sites and aggregate_status apply.
+    if site.source != SiteSource.external_reference:
         members = await ChargePoint.find(ChargePoint.site_id == site.id).to_list()
     return SiteDetail(
         id=str(site.id),
@@ -211,7 +231,7 @@ async def charge_point_detail(identity):
     return ChargePointDetail(
         identity=identity,
         site_id=str(cp.site_id) if cp.site_id is not None else None,
-        connectors=_connector_outs(connectors),
+        connectors=_connector_outs(connectors, cp.connector_specs),
         current_transaction=current,
     )
 

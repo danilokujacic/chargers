@@ -194,6 +194,9 @@ firmware. All of that remains exclusively reachable through `main.py`'s existing
 nothing reachable from the public internet through it can ever command a physical charger. Treat
 any endpoint proposal that would violate this as a design error, not a shortcut.
 
+`source` can also be `"simulated"` (a demo site whose chargers are simulated, defined in
+`11-demo-fleet.md`); everywhere in this section it behaves exactly like `"operator"`.
+
 ### `GET /api/v1/sites`
 
 Every `Site` — both `source: "operator"` sites (at least one real `ChargePoint` points at them)

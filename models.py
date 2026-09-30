@@ -20,6 +20,7 @@ from datetime import UTC, datetime
 from enum import StrEnum
 
 from beanie import Document, PydanticObjectId, init_beanie
+from dotenv import load_dotenv
 from ocpp.v16 import datatypes
 from ocpp.v16.enums import (
     AuthorizationStatus,
@@ -32,12 +33,16 @@ from ocpp.v16.enums import (
     Reason,
 )
 from ocpp.v16.enums import RegistrationStatus
-from pydantic import Field, field_validator
+from pydantic import BaseModel, Field, field_validator
 from pymongo import AsyncMongoClient, IndexModel, ReturnDocument
 from pymongo.errors import DuplicateKeyError
 
 from charging_profiles import TX
 from connector_state_machine import ConnectorState
+
+# Load the project's .env (real environment variables take precedence). models is imported by
+# both main.py and the API, so this covers every entry point.
+load_dotenv()
 
 # OCPP-J 1.6 s6.2.2: "The password is a 20-byte key that is stored on the charge
 # point", carried over OCPP as "a 40-character hexadecimal representation".
@@ -155,6 +160,32 @@ def verify_authorization_key(key, stored_hash):
     return hmac.compare_digest(digest.hex(), digest_hex)
 
 
+class PowerType(StrEnum):
+    """Whether a connector delivers AC or DC. OCPP 1.6 has no such enum -- it never reports a
+    connector's hardware at all -- so this is defined here, the same way SiteType is."""
+
+    AC = "AC"
+    DC = "DC"
+
+
+class ConnectorSpec(BaseModel):
+    """What one connector physically is: its plug and its rated power (11-demo-fleet.md §A).
+
+    Hardware description, never status. OCPP 1.6 has no message that reports a plug type or a
+    rating, so this embedded record is the only place the system knows them. Embedded in the
+    ChargePoint document rather than a Document of its own: it has no life apart from its
+    charger.
+    """
+
+    # OCPP 1.6 s3.8: connectors are numbered from 1; 0 is the charger as a whole, never a plug.
+    connector_id: int = Field(ge=1)
+    connector_type: str
+    power_type: PowerType
+    # None means "not known", never "zero": a rating is only ever copied from a source that
+    # states it, not guessed from the plug type.
+    max_power_kw: float | None = None
+
+
 class ChargePoint(Document):
     """A charge point registered with this central system."""
 
@@ -189,6 +220,12 @@ class ChargePoint(Document):
     site_id: PydanticObjectId | None = None
     latitude: float | None = None
     longitude: float | None = None
+    # True only for a demo charger created by seed_demo_fleet.py (11-demo-fleet.md). It is the
+    # selector remove_demo_fleet.py deletes by, so nothing else may ever set it.
+    simulated: bool = False
+    # The plugs this charger physically has, one per connector. Empty for a charger nobody has
+    # described -- every real one today, CP001 included.
+    connector_specs: list[ConnectorSpec] = Field(default_factory=list)
     created_at: datetime = Field(default_factory=_utcnow)
     updated_at: datetime = Field(default_factory=_utcnow)
 
@@ -373,10 +410,17 @@ class SiteType(StrEnum):
 
 class SiteSource(StrEnum):
     """Whether this Central System actually operates a Site, or merely knows it exists
-    (07-public-map-platform.md §A's "sites we operate vs. sites we only know about")."""
+    (07-public-map-platform.md §A's "sites we operate vs. sites we only know about").
+
+    `simulated` (11-demo-fleet.md) is a real place whose chargers are simulated for a demo. It
+    behaves exactly like `operator` for live status and charger counting. Only
+    seed_demo_fleet.py sets it, and only remove_demo_fleet.py reverts it (to
+    `external_reference`).
+    """
 
     operator = "operator"
     external_reference = "external_reference"
+    simulated = "simulated"
 
 
 class Site(Document):
@@ -390,6 +434,12 @@ class Site(Document):
     knows the location exists -- e.g. imported from a third-party directory
     (`09-plugshare-import.md`) -- and has never connected to anything here, so its live status
     is always reported as "unknown", never guessed at.
+
+    `source: simulated` is an imported site whose chargers are simulated for a demo
+    (`11-demo-fleet.md`): a real place, with mock ChargePoints (`simulated=True`) whose status is
+    real OCPP traffic from `run_demo_fleet.py`. It is treated like `operator` everywhere, and
+    exists as a separate value only so the demo can be found and removed
+    (`12-remove-demo-fleet.md`).
     """
 
     name: str

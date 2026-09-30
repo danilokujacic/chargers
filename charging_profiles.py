@@ -16,7 +16,7 @@ This module holds the parts that are pure functions of data, with no I/O:
   composites itself: it asks the charger with GetCompositeSchedule, because the charger is the
   authority on its own local limits. This class exists because the simulator and the test
   doubles need a real, spec-following charger to talk to, and because it is importable by tests
-  (simulate_charge_point.py is not: its last line runs main() at import time).
+  without the rest of the simulator.
 
 Time model, per s3.13 and s7.13: an *Absolute* profile counts from its startSchedule; a *Recurring*
 one restarts from startSchedule every day or week; a *Relative* one counts from a

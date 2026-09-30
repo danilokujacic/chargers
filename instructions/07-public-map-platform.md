@@ -55,7 +55,7 @@ via `_utcnow`):
 | `latitude` | `float` | Required. WGS84 decimal degrees. |
 | `longitude` | `float` | Required. WGS84 decimal degrees. |
 | `address` | `str \| None` | Human-readable, optional. Filled by reverse geocoding (see `10-frontend-nextjs.md` §H for the geocoding approach) when an operator places a site by clicking the map, or typed by hand. |
-| `source` | `SiteSource` (new enum) | `operator` (default) or `external_reference`. See "Sites we operate vs. sites we only know about" below — this is not optional, it changes what the API is allowed to claim about a site. |
+| `source` | `SiteSource` (new enum) | `operator` (default) or `external_reference`. See "Sites we operate vs. sites we only know about" below — this is not optional, it changes what the API is allowed to claim about a site. A third value, `simulated` (a demo site with simulated chargers), behaves exactly like `operator` and is defined in `11-demo-fleet.md`. |
 | `external_id` | `str \| None` | The source platform's own id for this location (e.g. a PlugShare location id), kept only so a re-run import can recognise "already imported" and update rather than duplicate. Never used as a foreign key into anything. |
 | `external_url` | `str \| None` | Optional attribution/provenance link back to the source listing. Display-only. |
 | `connector_types` | `list[str] \| None` | Physical plug standards available at this site (e.g. `["CCS2", "CHAdeMO", "Type 2"]`), as plain strings — not an enum, and never a third-party numeric code (see the import section below for why). |

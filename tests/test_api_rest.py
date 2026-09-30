@@ -114,10 +114,20 @@ async def test_site_detail_shape(client, charge_point_identity):
     await make_cp(charge_point_identity, site, [S.charging])
     body = (await client.get(f"/api/v1/sites/{site.id}")).json()
     assert body["address"] == "Bulevar 1"
+    # A charger without ConnectorSpecs (every real one): the hardware fields are present, null.
     assert body["charge_points"] == [
         {
             "identity": charge_point_identity,
-            "connectors": [{"connector_id": 1, "status": "Charging", "error_code": "NoError"}],
+            "connectors": [
+                {
+                    "connector_id": 1,
+                    "status": "Charging",
+                    "error_code": "NoError",
+                    "connector_type": None,
+                    "power_type": None,
+                    "max_power_kw": None,
+                }
+            ],
         }
     ]
 

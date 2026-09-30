@@ -67,6 +67,31 @@ $env:ADMIN_TOKEN = "some-shared-secret"
 .\.venv\Scripts\python.exe operate.py remote-stop CP001 42
 ```
 
+## Demo fleet
+
+**Demo data.** Turns every imported PlugShare site into a simulated one: a mock OCPP charger per
+PlugShare station, one connector per outlet, driven live by one fleet process
+([instructions/11-demo-fleet.md](instructions/11-demo-fleet.md)). The map then shows live
+statuses for real chargers this system has never talked to, so remove it when the demo is over
+([instructions/12-remove-demo-fleet.md](instructions/12-remove-demo-fleet.md)).
+
+MongoDB and Redis must be running, and `.env` filled in (`REDIS_URL`, `CORS_ORIGINS`,
+`ADMIN_TOKEN`). Run these in order, from this directory unless noted:
+
+```
+python main.py                                            # terminal 1
+uvicorn api.app:app --host 0.0.0.0 --port 8000            # terminal 2
+python import_plugshare_sites.py                          # once; skip if already imported
+python seed_demo_fleet.py                                 # once; safe to re-run
+python run_demo_fleet.py                                  # terminal 3; Ctrl+C to stop
+cd ../charger-fe && npm run dev                           # terminal 4, then open :3000
+```
+
+`seed_demo_fleet.py` writes the mock chargers' keys to `demo_fleet_manifest.json` (the only
+copy); `run_demo_fleet.py` keeps its energy registers and open sessions in
+`demo_fleet_state.json`. Both are gitignored. Try `python operate.py remote-start PS-2946795
+DEMO-REMOTE` against a running fleet.
+
 ## Tests
 
 ```powershell
@@ -94,6 +119,7 @@ checks the connector status transition table on its own:
 | `seed.py` / `register_charge_point.py` | Operator CLIs for provisioning charge points |
 | `simulate_charge_point.py` | A scriptable simulated charger, for testing against `main.py` |
 | `operate.py` | Operator CLI for remote start/stop against a connected charger |
+| `seed_demo_fleet.py` / `run_demo_fleet.py` | The demo fleet: mock chargers for the PlugShare sites, and the process that runs them |
 | `ocpp_client_auth.py` | Shared HTTP Basic auth header helper |
 | `tests/` | pytest suite |
 | `ocpp-docs/` | The OCPP 1.6 specification PDFs this project is built from |

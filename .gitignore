@@ -10,3 +10,7 @@ build/
 *.egg-info/
 .vscode/
 charge_point_credentials.json
+demo_fleet_manifest.json
+demo_fleet_state.json
+demo/videos/
+demo/logs/

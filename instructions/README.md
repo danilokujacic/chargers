@@ -67,6 +67,8 @@ Rules:
 | 08 | [public-api-service.md](08-public-api-service.md) | 07's §A (the `Site` data model) must exist first |
 | 09 | [plugshare-import.md](09-plugshare-import.md) | 07's §A (needs the `Site` document's `source`/`external_*` fields) |
 | 10 | [frontend-nextjs.md](10-frontend-nextjs.md) | 08 (nothing to fetch or subscribe to before the API exists) |
+| 11 | [demo-fleet.md](11-demo-fleet.md) | 04, 08, 09, 10 -- a simulated charger per PlugShare station, driven live by a fleet runner. Demo data. |
+| 12 | [remove-demo-fleet.md](12-remove-demo-fleet.md) | 11 -- removes every piece of 11's data and restores 09's reference-only state |
 
 ## What already exists
 
