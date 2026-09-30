@@ -6,6 +6,9 @@ flow (authorize → start → meter values → stop), and remote start/stop.
 
 For the OCPP background, the build history, and what's still unimplemented, see
 [instructions/](instructions/) — start with [instructions/README.md](instructions/README.md).
+How the Central System works is explained in [SYSTEM_OVERVIEW.md](SYSTEM_OVERVIEW.md); the public
+map platform built on it (the API, the PlugShare import, the website and the demo fleet — tasks
+07–11) in [PLATFORM_GUIDE.md](PLATFORM_GUIDE.md).
 
 ## Requirements
 

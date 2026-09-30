@@ -49,8 +49,12 @@ Concretely, this project is:
 - A pytest suite (`tests/`) that proves all of the above actually works, against a real MongoDB
   and real WebSocket connections — not mocks.
 
-There is no user-facing website or map yet. Everything today is a backend protocol
-implementation plus command-line tools. (Four separate guides describe how to build a public map
+*(Update: the public map platform described below now exists — the API, the PlugShare import,
+the website and the demo fleet. It is explained in [`PLATFORM_GUIDE.md`](PLATFORM_GUIDE.md); this
+document still covers the Central System itself.)*
+
+When this overview was written there was no user-facing website or map yet. Everything was a
+backend protocol implementation plus command-line tools. (Four separate guides describe how to build a public map
 on top of this: `instructions/07-public-map-platform.md` covers the data model and a brief
 overview; `instructions/08-public-api-service.md` is the self-contained spec for the new,
 isolated FastAPI service that sits in the middle; `instructions/09-plugshare-import.md` is the
