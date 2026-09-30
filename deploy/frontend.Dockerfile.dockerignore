@@ -1,0 +1,9 @@
+# Applies to the charger-fe build context when deploy/frontend.Dockerfile is used.
+# .env* must stay out: the build takes its NEXT_PUBLIC_* values from build arguments only.
+node_modules
+.next
+.git
+.env*
+test-results
+playwright-report
+tsconfig.tsbuildinfo

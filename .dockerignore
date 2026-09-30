@@ -1,0 +1,18 @@
+# Keep the backend image small and free of secrets and local state.
+.git
+.venv
+venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+.env
+.env.*
+!.env.example
+charge_point_credentials.json
+demo_fleet_manifest.json
+demo_fleet_state.json
+demo/videos
+demo/logs
+backups
+node_modules

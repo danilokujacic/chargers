@@ -1298,6 +1298,9 @@ touch CP001, operator sites, other cards, or the transaction counter.
 
 ## 17. Running everything
 
+This section is about running it for development. **On a server, use Docker and the Makefile
+instead: see [`DEPLOY.md`](DEPLOY.md)** (`make setup`, `make deploy`).
+
 **What must be running, and on which port:**
 
 | Process | Port | Start with | Needs |

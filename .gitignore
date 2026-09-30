@@ -14,3 +14,6 @@ demo_fleet_manifest.json
 demo_fleet_state.json
 demo/videos/
 demo/logs/
+.env.*
+!.env.example
+backups/

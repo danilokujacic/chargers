@@ -1,0 +1,37 @@
+# Caddy terminates TLS (certificates from Let's Encrypt, obtained and renewed automatically) and
+# routes traffic to the containers. Addresses come from .env.production via docker-compose.yml.
+#
+# To receive certificate-expiry mail, add a global block at the top:
+#   { email you@example.com }
+
+# The website and the public API, on one domain: https://DOMAIN
+{$SITE_ADDRESS} {
+	encode zstd gzip
+
+	@api path /api/* /docs /docs/* /openapi.json
+	handle @api {
+		reverse_proxy api:8000
+	}
+
+	handle {
+		reverse_proxy frontend:3000
+	}
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		-Server
+	}
+}
+
+# Chargers: OCPP-J over TLS (wss://OCPP_DOMAIN/<identity>) and firmware downloads
+# (https://OCPP_DOMAIN/firmware/<file>). The admin API shares main.py's port, but is never
+# reachable through here: operators use it from the server (`make operate ...`).
+{$OCPP_SITE_ADDRESS} {
+	@admin path /admin /admin/*
+	respond @admin 404
+
+	reverse_proxy cs:9000
+
+	header -Server
+}

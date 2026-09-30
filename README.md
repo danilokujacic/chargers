@@ -10,6 +10,12 @@ How the Central System works is explained in [SYSTEM_OVERVIEW.md](SYSTEM_OVERVIE
 map platform built on it (the API, the PlugShare import, the website and the demo fleet — tasks
 07–11) in [PLATFORM_GUIDE.md](PLATFORM_GUIDE.md).
 
+## Deploying to a server
+
+Everything — MongoDB, Redis, the Central System, the public API, the website and HTTPS — runs in
+Docker on one Ubuntu VPS, driven by `make` (`make install-docker`, `make setup`, `make deploy`).
+See [DEPLOY.md](DEPLOY.md). The rest of this README is about running it for development.
+
 ## Requirements
 
 - Python 3.13
