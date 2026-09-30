@@ -35,8 +35,8 @@ from models import (
     PowerType,
     Site,
     SiteSource,
+    display_mongodb_url,
     init_db,
-    mongodb_url,
 )
 
 DEFAULT_FILE = "montenegro_only.json"
@@ -370,7 +370,7 @@ async def main(args):
         print(f"Aborted, nothing was written: {exc}")
         return 1
     except PyMongoError as exc:
-        print(f"Could not reach MongoDB at {mongodb_url()}: {type(exc).__name__}")
+        print(f"Could not reach MongoDB at {display_mongodb_url()}: {type(exc).__name__}")
         print("Start MongoDB, or set MONGODB_URL to point elsewhere.")
         return 1
     finally:

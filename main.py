@@ -59,7 +59,7 @@ from models import ChargePoint as ChargePointRecord
 from models import ConfigurationEntry, ConnectorStatus, DiagnosticsRequest, FaultEvent
 from models import FirmwareUpdate, IdTag, InstalledChargingProfile, LocalListState
 from models import Reservation, Site, SiteType
-from models import Transaction, authorization_key_from_basic_password, init_db, mongodb_url
+from models import Transaction, authorization_key_from_basic_password, display_mongodb_url, init_db
 from models import next_reservation_id
 
 # OCPP-J 1.6 s6.2.2: a charger "should not give back the authorization key in response to a
@@ -1656,10 +1656,10 @@ async def main():
     try:
         await init_db()
     except PyMongoError as exc:
-        print(f"Could not reach MongoDB at {mongodb_url()}: {type(exc).__name__}")
+        print(f"Could not reach MongoDB at {display_mongodb_url()}: {type(exc).__name__}")
         print("Start MongoDB, or set MONGODB_URL to point elsewhere.")
         return 1
-    print(f"Charge point registry ready at {mongodb_url()}")
+    print(f"Charge point registry ready at {display_mongodb_url()}")
     await connect_event_publisher()
     server = await serve()
     # Not started from serve(): the test suite calls serve() directly, on a session-scoped

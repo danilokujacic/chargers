@@ -16,7 +16,7 @@ from api import config
 from api.live import ConnectionManager, subscribe_forever
 from api.routes_rest import router as rest_router
 from api.routes_ws import router as ws_router
-from models import init_db, mongodb_url
+from models import display_mongodb_url, init_db
 
 
 @asynccontextmanager
@@ -24,7 +24,7 @@ async def lifespan(app):
     try:
         client = await init_db()
     except PyMongoError as exc:
-        print(f"Could not reach MongoDB at {mongodb_url()}: {type(exc).__name__}")
+        print(f"Could not reach MongoDB at {display_mongodb_url()}: {type(exc).__name__}")
         print("Start MongoDB, or set MONGODB_URL to point elsewhere.")
         raise SystemExit(1) from exc
 

@@ -18,6 +18,7 @@ import os
 import secrets
 from datetime import UTC, datetime
 from enum import StrEnum
+from urllib.parse import urlsplit, urlunsplit
 
 from beanie import Document, PydanticObjectId, init_beanie
 from dotenv import load_dotenv
@@ -1433,6 +1434,17 @@ async def next_reservation_id():
 def mongodb_url():
     """The configured MongoDB URL."""
     return os.environ.get("MONGODB_URL", DEFAULT_MONGODB_URL)
+
+
+def display_mongodb_url():
+    """The configured MongoDB URL with its password masked, for messages and logs. In
+    production the URL carries the database password, and startup lines end up in log files."""
+    url = mongodb_url()
+    parts = urlsplit(url)
+    if parts.password is None:
+        return url
+    netloc = parts.netloc.replace(f":{parts.password}@", ":***@", 1)
+    return urlunsplit(parts._replace(netloc=netloc))
 
 
 _database = None  # set by init_db(); backs get_database()

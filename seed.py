@@ -23,7 +23,7 @@ import pathlib
 from ocpp.v16.enums import RegistrationStatus
 from pymongo.errors import PyMongoError
 
-from models import ChargePoint, init_db, mongodb_url
+from models import ChargePoint, display_mongodb_url, init_db
 
 DEFAULT_IDENTITIES = ["CP001", "CP002", "CP003"]
 CREDENTIALS_FILE = "charge_point_credentials.json"
@@ -51,7 +51,7 @@ async def main(args):
     try:
         client = await init_db()
     except PyMongoError as exc:
-        print(f"Could not reach MongoDB at {mongodb_url()}: {type(exc).__name__}")
+        print(f"Could not reach MongoDB at {display_mongodb_url()}: {type(exc).__name__}")
         print("Start MongoDB, or set MONGODB_URL to point elsewhere.")
         return 1
     try:
