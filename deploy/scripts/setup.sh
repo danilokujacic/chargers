@@ -67,7 +67,7 @@ ADDRESS_PREFIX=$([ "$SCHEME" = https ] && echo "" || echo "http://")
 # --- the frontend repository ---------------------------------------------------------------------
 FRONTEND_DIR="${FRONTEND_DIR:-$ROOT/../charger-fe}"
 if [ ! -d "$FRONTEND_DIR" ]; then
-  FRONTEND_REPO="${FRONTEND_REPO:-git@github.com:danilokujacic/chargers-fe.git}"
+  FRONTEND_REPO="${FRONTEND_REPO:-https://github.com/danilokujacic/chargers-fe.git}"
   echo "Cloning the frontend from $FRONTEND_REPO into $FRONTEND_DIR"
   git clone "$FRONTEND_REPO" "$FRONTEND_DIR" \
     || fail "could not clone the frontend. Clone it yourself, or set FRONTEND_DIR / FRONTEND_REPO"
